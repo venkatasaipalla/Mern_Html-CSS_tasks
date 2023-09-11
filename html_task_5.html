@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML task-05</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            
+            th, td {
+                padding: 0;
+                border: 1px solid black;
+                text-align: center;
+            }
+            .c2{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            label{
+                font-weight: bold;
+            }
+            caption{
+                color: blue;
+                font-size: xx-large;
+                font-weight: bold;
+            }
+            .c1{
+                text-align: start;
+            }
+            .c3{
+                text-align: end;
+            }
+            .margin{
+                margin: 5% 20%;
+                border-style: solid;
+                border-width: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="./index.html" style="text-decoration: none; font-size: larger; color: black;">Back to Home Page</a>
+        <div class="margin">
+            <form action="https://ethnus.com/" style="padding:3% 15%;">
+                <table width="100%">
+                    <caption style="padding-bottom: 10px;">Registration form</caption>
+                    <tr>
+                        <td><label for="fn">First Name</label></td>
+                        <td><input type="text" name="fn" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ln">Last Name</label></td>
+                        <td><input type="text" name="ln" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mailid">Email</label></td>
+                        <td><input type="email" name="mailid" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="password" name="pass" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repass">Re-enter Password</label></td>
+                        <td><input type="password" name="repass" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><label for="gender">Gender</label></td>
+                        <td class="c1"><input type="radio" name="gender">Male</td>
+                    </tr>
+                    <tr>
+                        <td class="c1"><input type="radio" name="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" name="age" class="c2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phno">Phone Number</label></td>
+                        <td><input type="number" name="phno" class="c2"></td>
+                    </tr>
+                    <tr height="100">
+                        <td ><label for="Address">Address</label></td>
+                        <td height="100"><input type="text" name="Address" class="c2"></td>
+                    </tr>
+                    <tr >
+                        <td><label for="state">State</label></td>
+                        <td><input type="text" name="state" class="c2"></td>
+                    </tr>
+                    <tr >
+                        <td><label for="country">Country</label></td>
+                        <td class="c1">
+                            <select>
+                                <option>choose your country</option>
+                                <option value="India">India</option>
+                                <option value="UK">UK</option>
+                                <option value="USA">USA</option>
+                                <option value="China">China</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td><label for="lang">Languages known</label></td>
+                        <td class="c1">
+                            <input type="checkbox">English
+                            <input type="checkbox">Kannada
+                            <input type="checkbox">Hindi
+                            <input type="checkbox">Telugu
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="c1">
+                            <input type="checkbox" checked>Hereby I declare all the given details are true
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="c3">
+                            Log in to <a href="https://ethnus.com/">Ethnus</a> website
+                        </td>
+                    </tr>
+                    
+                </table>
+                <input type="submit" value="Register" style="margin-top: 20px; margin-left: 250px;">
+            </form>
+            
+    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Task-02</title>
+        <style>
+            .vertical{
+                float: left;
+                margin: 1% 1%;
+                border:1px solid black;
+                padding: 10px 5px;
+                width: 20%;
+            }
+            .vertical a{
+                display: block;
+                color:blue;
+                background-color:#96D4D4;
+                padding:8px 16px;
+                text-decoration: none;
+            }
+            .vertical a:hover{
+                background-color: orange;
+                color: white;
+            }
+            .horizontal{
+                border: 1px solid black;
+                padding: 5px;
+                padding-right: 0px;
+                float: left;
+                margin-left: 10%;
+                margin-top: 7%;
+                width: 50%;
+            }
+            .horizontal a{
+                float: left;
+                display: block;
+                color:blue;
+                border-right:1px solid blue;
+                flex-wrap: wrap;
+                background-color:#f1f1f1;
+                padding:8px 16px;
+                text-decoration: none;
+            }
+            .horizontal a:hover{
+                background-color: gray;
+                color: white;
+            }
+            .container{
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="./index.html" style="text-decoration: none; font-size: larger; color: black;">Back to Home Page</a><br><br><br>
+        <center>
+            <div class="container">
+                <div class="vertical">
+                    <a href="./css_task_2.html" style="background-color: orange; color:white;">Home</a>
+                    <a href="https://www.w3schools.com/java/">Java</a>
+                    <a href="https://www.w3schools.com/css/">CSS</a>
+                    <a href="https://www.w3schools.com/html/">HTML</a>
+                    <a href="https://www.w3schools.com/bootstrap/">Bootstrap</a>
+                </div>
+                <div class="horizontal">
+                    <a href="./css_task_2.html" style="background-color: gray; color:white;">Home</a>
+                    <a href="https://www.w3schools.com/java/">Java</a>
+                    <a href="https://www.w3schools.com/html/">HTML</a>
+                    <a href="https://www.w3schools.com/css/">CSS</a>
+                    <a href="https://www.w3schools.com/bootstrap/">Bootstrap</a>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
